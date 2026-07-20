@@ -1,0 +1,24 @@
+FILE: frontend/src/third_party/open-dronelog/NOTICE.txt
+
+Open DroneLog mapping-stack notice
+
+This CDR Analyzer map port uses the same public mapping stack documented by
+Open DroneLog:
+
+- react-map-gl
+- MapLibre GL
+- deck.gl
+- Esri World Imagery
+- OpenStreetMap
+- OpenTopoMap
+
+The original Open DroneLog repository is:
+https://github.com/arpanghosh8453/open-dronelog
+
+Open DroneLog is licensed AGPL-3.0-only. The original FlightMap.tsx is a large,
+drone-telemetry-specific component and is not copied unchanged into this
+project. This adapter preserves the CDR Analyzer data model and page layout
+while using the same map engine, map-type choices and Deck.gl overlay approach.
+
+Do not represent this CDR-specific adapter as the original Open DroneLog
+application or as an official Open DroneLog component.

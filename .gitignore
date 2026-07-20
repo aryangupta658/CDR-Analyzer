@@ -1,0 +1,98 @@
+cat > .gitignore <<'EOF'
+# =========================
+# Python backend
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Python virtual environments
+venv/
+.venv/
+env/
+backend/venv/
+backend/.venv/
+
+# Python testing and cache
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Environment and secrets
+# =========================
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# =========================
+# Database files
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+backend/*.db
+backend/**/*.db
+
+# =========================
+# Uploaded evidence files
+# =========================
+backend/uploads/
+backend/storage/
+backend/media/
+uploads/
+storage/
+
+# =========================
+# React / Node frontend
+# =========================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+dist/
+.vite/
+
+# =========================
+# Logs
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# IDE files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================
+# Operating-system files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Temporary and backup files
+# =========================
+*.tmp
+*.temp
+*.bak
+.cache/
+
+# =========================
+# Generated reports
+# =========================
+*.pdf
+*.docx
+EOF

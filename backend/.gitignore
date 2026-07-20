@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment secrets
+.env
+
+# SQLite database
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploaded evidence
+storage/originals/*
+!storage/originals/.gitkeep
+
+# IDE files
+.vscode/
+.idea/
+
+# Testing cache
+.pytest_cache/
